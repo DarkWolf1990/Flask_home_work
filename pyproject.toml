@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "home-work-flask"
+version = "0.1.0"
+description = ""
+authors = ["YOUR_NAME <YOUR_EMAIL>"]
+readme = "README.md"
+packages = [{include = "home_work_flask"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
