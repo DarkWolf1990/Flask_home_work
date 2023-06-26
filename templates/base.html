@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		{% block title %} base {% endblock %}
+	</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+
+<body>
+	<header class="header centr">
+		<nav class="nav_ center">
+			<ul class="nav center">
+				<li class="home_li"><a href="/" class="nav_a">home</a></li>
+				<li class="about_li"><a href="/about/" class="nav_a">about us</a></li>
+				<li class="contact"><a href="/contact/" class="nav_a">contact</a></li>
+				<li class="catalog"><a href="/catalog/" class="nav_a">catalog</a></li>
+			</ul>
+		</nav>
+	</header>
+	{% block content %}
+	<main>
+
+		<div class="text_top center">
+			<h1 class="text_top_h1">Welcome to website!</h1>
+		</div>
+
+	</main>
+	{% endblock %} {% block footer %}
+	<div class="section">
+		<footer class="footer">
+			<h2>This is based!</h2>
+
+		</footer>
+	</div>
+	{% endblock %}
+
+
+</body>
+
+</html>
